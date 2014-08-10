@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "ITICreateAccountViewController.h"
+#import "ITIViewController.h"
+#import "ITIUserObject.h"
+
 
 @interface ITISignInViewController : UIViewController <ITICreateAccountViewControllerDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) ITIUserObject *user;
+
 - (IBAction)createAccountButtonItemPressed:(UIBarButtonItem *)sender;
 
 - (IBAction)loginButtonPressed:(UIButton *)sender;

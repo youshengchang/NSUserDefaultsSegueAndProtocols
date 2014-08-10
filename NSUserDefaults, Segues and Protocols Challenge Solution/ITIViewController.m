@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"user Name: %@, password: %@", self.user.userName, self.user.password);
+    self.userNameLabel.text = self.user.userName;
+    self.passwordLabel.text = self.user.password;
 }
 
 - (void)didReceiveMemoryWarning

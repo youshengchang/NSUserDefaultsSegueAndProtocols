@@ -36,7 +36,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="xYs-4J-t71" eventType="touchUpInside" id="iFe-EB-MRS"/>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" identifier="userInfoViewControllerSegue" id="L3Q-ex-HF4"/>
+                                    <segue destination="vXZ-lx-hvc" kind="push" identifier="userInfoViewControllerSegue" id="L3Q-ex-HF4"/>
                                 </connections>
                             </button>
                         </subviews>
