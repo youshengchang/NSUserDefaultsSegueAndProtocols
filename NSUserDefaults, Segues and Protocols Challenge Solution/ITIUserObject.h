@@ -12,4 +12,9 @@
 @property (strong, nonatomic)NSString *userName;
 @property (strong, nonatomic)NSString *password;
 
+#define USER_NAME @"username"
+#define USER_PASSWORD @"password"
+
+-(id)initWithData: (NSDictionary *)data;
+
 @end

@@ -9,5 +9,12 @@
 #import "ITIUserObject.h"
 
 @implementation ITIUserObject
-
+-(id)initWithData: (NSDictionary *)data
+{
+    self = [super init];
+    self.userName = data[USER_NAME];
+    self.password = data[USER_PASSWORD];
+    return self;
+    
+}
 @end

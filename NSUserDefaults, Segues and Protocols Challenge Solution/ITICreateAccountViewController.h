@@ -22,7 +22,7 @@
 @end
 
 @interface ITICreateAccountViewController : UIViewController
-@property   id <ITICreateAccountViewControllerDelegate> delegate;
+@property  (weak, nonatomic)id <ITICreateAccountViewControllerDelegate> delegate;
 
 @property (strong, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;

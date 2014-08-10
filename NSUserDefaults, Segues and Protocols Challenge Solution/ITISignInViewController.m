@@ -86,6 +86,8 @@
 
 #pragma mark - actions
 - (IBAction)createAccountButtonItemPressed:(UIBarButtonItem *)sender {
+    [self performSegueWithIdentifier:@"createAccountViewControllerSegue" sender:sender];
+     
 }
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
@@ -96,10 +98,12 @@
         self.user = [[ITIUserObject alloc]init];
         self.user.userName = self.userNameTextField.text;
         self.user.password = self.passwordTextField.text;
+        [self performSegueWithIdentifier:@"userInfoViewControllerSegue" sender:sender];
     }else{
        UIAlertView *allert = [[UIAlertView alloc]initWithTitle:@"Alert!!!" message:@"The user name or password is not correct!" delegate:nil
     cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [allert show];
+  
         
     }
 }

@@ -36,7 +36,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="xYs-4J-t71" eventType="touchUpInside" id="iFe-EB-MRS"/>
-                                    <segue destination="vXZ-lx-hvc" kind="push" identifier="userInfoViewControllerSegue" id="L3Q-ex-HF4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,13 +45,14 @@
                         <barButtonItem key="rightBarButtonItem" title="Create Account" id="isT-6s-PBT">
                             <connections>
                                 <action selector="createAccountButtonItemPressed:" destination="xYs-4J-t71" id="xaA-X7-A6t"/>
-                                <segue destination="N3R-Uy-jXh" kind="modal" identifier="createAccountViewControllerSegue" id="7eS-rj-ciP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="passwordTextField" destination="nOe-RU-FU9" id="VT8-Uf-5FM"/>
                         <outlet property="userNameTextField" destination="wKH-84-rE3" id="r9E-2K-kTx"/>
+                        <segue destination="N3R-Uy-jXh" kind="modal" identifier="createAccountViewControllerSegue" id="uEw-nT-nUY"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="userInfoViewControllerSegue" id="53m-V5-DPT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oc9-Sf-aiE" userLabel="First Responder" sceneMemberID="firstResponder"/>
