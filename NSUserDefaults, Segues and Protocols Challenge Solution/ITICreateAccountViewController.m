@@ -48,7 +48,7 @@
 
 - (IBAction)createAccountButtonPressed:(UIButton *)sender {
     NSLog(@"In Create User: user: %@, password: %@, confirmed Password %@", self.userNameTextField.text, self.passwordTextField.text, self.confirmPasswordTextField.text);
-    if ((self.userNameTextField.text)&&(self.passwordTextField.text)&&(self.confirmPasswordTextField.text)) {
+    if ((self.userNameTextField.text.length != 0)&&(self.passwordTextField.text.length != 0)&&(self.confirmPasswordTextField.text.length != 0)) {
         if([self.passwordTextField.text isEqualToString: self.confirmPasswordTextField.text]){
             self.user = [[ITIUserObject alloc]init];
             self.user.userName = self.userNameTextField.text;
@@ -56,8 +56,7 @@
             [[NSUserDefaults standardUserDefaults] setObject:self.user.userName forKey:USER_NAME];
             [[NSUserDefaults standardUserDefaults] setObject:self.user.password forKey:USER_PASSWORD];
             [[NSUserDefaults standardUserDefaults] synchronize];
-
-            
+            [self.delegate didCreateAccount:self.user];            
         }else{
             
             UIAlertView *allert = [[UIAlertView alloc]initWithTitle:@"Alert!" message:@"The confirmed password field is not match with password fields." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
@@ -70,7 +69,7 @@
 
     }
     NSLog(@"In Create user: userName: %@, password %@", self.user.userName, self.user.password);
-    [self.delegate didCreateAccount:self.user];
+    
     
 }
 
