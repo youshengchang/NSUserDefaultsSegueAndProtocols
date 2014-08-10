@@ -21,6 +21,8 @@
 		8F88476819972146007A5D08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F88474A19972146007A5D08 /* UIKit.framework */; };
 		8F88477019972146007A5D08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F88476E19972146007A5D08 /* InfoPlist.strings */; };
 		8F88477219972146007A5D08 /* NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F88477119972146007A5D08 /* NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m */; };
+		8F88477D199721B2007A5D08 /* ITISignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F88477C199721B2007A5D08 /* ITISignInViewController.m */; };
+		8F884780199721CF007A5D08 /* ITICreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F88477F199721CF007A5D08 /* ITICreateAccountViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		8F88476D19972146007A5D08 /* NSUserDefaults, Segues and Protocols Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSUserDefaults, Segues and Protocols Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		8F88476F19972146007A5D08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F88477119972146007A5D08 /* NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		8F88477B199721B2007A5D08 /* ITISignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITISignInViewController.h; sourceTree = "<group>"; };
+		8F88477C199721B2007A5D08 /* ITISignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITISignInViewController.m; sourceTree = "<group>"; };
+		8F88477E199721CF007A5D08 /* ITICreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITICreateAccountViewController.h; sourceTree = "<group>"; };
+		8F88477F199721CF007A5D08 /* ITICreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITICreateAccountViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				8F88475519972146007A5D08 /* ITIAppDelegate.h */,
 				8F88475619972146007A5D08 /* ITIAppDelegate.m */,
 				8F88475819972146007A5D08 /* Main.storyboard */,
+				8F88477B199721B2007A5D08 /* ITISignInViewController.h */,
+				8F88477C199721B2007A5D08 /* ITISignInViewController.m */,
+				8F88477E199721CF007A5D08 /* ITICreateAccountViewController.h */,
+				8F88477F199721CF007A5D08 /* ITICreateAccountViewController.m */,
 				8F88475B19972146007A5D08 /* ITIViewController.h */,
 				8F88475C19972146007A5D08 /* ITIViewController.m */,
 				8F88475E19972146007A5D08 /* Images.xcassets */,
@@ -251,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F88475319972146007A5D08 /* main.m in Sources */,
+				8F88477D199721B2007A5D08 /* ITISignInViewController.m in Sources */,
 				8F88475D19972146007A5D08 /* ITIViewController.m in Sources */,
+				8F884780199721CF007A5D08 /* ITICreateAccountViewController.m in Sources */,
 				8F88475719972146007A5D08 /* ITIAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
